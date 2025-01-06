@@ -1,0 +1,51 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+.box:first-child{
+    background-color: red;
+}
+.box:nth-child(2){
+    background-color: purple;
+
+}
+.box:nth-child(3){
+    background-color: pink;
+    transform:
+}
+.box:nth-child(3):hover{
+    background-color: black;
+    transition: all 5s linear 2s;
+}
+.animation{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    animation-name: posun;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translate(1000%);
+}
+.animation:hover{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+@keyframes posun{
+    0%{
+        transform:rotate(0)
+    }
+    50%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
